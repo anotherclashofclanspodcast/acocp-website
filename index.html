@@ -1,1 +1,309 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Another Clash of Clans Podcast</title><meta name=description content="Another Clash of Clans Podcast — Clash of Clans news, discussion, guests and Clash Court."><style>body{margin:0;background:#0d0d0d;color:#f2f2f2;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}header{background:#000;border-bottom:3px solid #f5c342;padding:34px 18px;text-align:center}h1{margin:0;color:#f5c342;font-size:2rem;text-transform:uppercase}nav{margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.pill{padding:8px 12px;border-radius:999px;border:1px solid #333;background:#181818;color:#fff;text-decoration:none;font-size:.9rem}main{max-width:820px;margin:0 auto;padding:16px}.card{background:#181818;border:1px solid #2a2a2a;border-radius:16px;padding:16px;margin:14px 0}.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}.links a{display:block;text-align:center;padding:12px;background:#222;border:1px solid #333;border-radius:12px;color:#fff;text-decoration:none;font-weight:700}.ep{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;border-left:3px solid #f5c342;background:#151515;margin:10px 0;border-radius:10px}.ep small{color:#a8a8a8;display:block}.tag{font-size:.75rem;background:#2a2a2a;border:1px solid #333;padding:3px 7px;border-radius:999px;color:#ccc}footer{padding:24px;text-align:center;color:#777;border-top:1px solid #222;margin-top:18px;font-size:.9rem}</style></head><body><header><h1>Another Clash of Clans Podcast</h1><div style=color:#a8a8a8;margin-top:6px>ACoCP • Audio-first • Fortnightly • Season 0 Specials</div><nav><a class=pill href=https://www.youtube.com/@anotherclashpodcast target=_blank>YouTube</a><a class=pill href=https://open.spotify.com/show/52LJMLGKdDGjB78HdF5iRa target=_blank>Spotify</a><a class=pill href=https://podcasts.apple.com/podcast/id1896730360 target=_blank>Apple</a><a class=pill href=https://www.tiktok.com/@click_acocp target=_blank>TikTok</a><a class=pill href=https://discord.gg/UsTUm9ERK target=_blank>Discord</a></nav></header><main><div class=card><h3 style=margin:0;color:#f5c342>Season 0 — Special Reports</h3><div class=ep><div><b>ClashOween Bulletin</b><small>Planned ~20 min traffic / work / gym friendly bulletin before Ep 17</small></div><span class=tag>Soon</span></div></div><div class=card><h3 style=margin:0;color:#f5c342>Episode Catalogue</h3><div class=ep><div><b>16. A Fright to Remember</b><small>Guest: EM626 • Season 0 crossover</small></div><span class=tag>Latest</span></div><div class=ep><div><b>15. Base-ic Instinct</b></div></div><div class=ep><div><b>14. Rise of the Termynator</b></div></div><div class=ep><div><b>13. Missing from the Stands</b></div></div><div class=ep><div><b>12. Waiting on the Exterminators</b></div></div><div class=ep><div><b>11. An Electrifying Combination</b></div></div><div class=ep><div><b>10. Happy 14th Clashiversary</b></div></div><div class=ep><div><b>9. A Storm on the Horizon</b></div></div><div class=ep><div><b>8. Making Things Crystal Clear</b></div></div><div class=ep><div><b>7. A Global Affair</b></div></div><div class=ep><div><b>6. Congress Is Now in Session</b></div></div><div class=ep><div><b>5. Order in the Court</b></div></div><div class=ep><div><b>4. End of an Era</b></div></div><div class=ep><div><b>3. In the Meantime</b></div></div><div class=ep><div><b>2. Getting to Know You</b></div></div><div class=ep><div><b>1. No Fools This April</b></div></div></div></main><footer>© 2026 Another Clash of Clans Podcast • Built on GitHub Pages • anotherclashofclanspodcast.github.io/acocp-website</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Another Clash of Clans Podcast — Clash of Clans news, discussion, guests and Clash Court.">
+<title>Another Clash of Clans Podcast</title>
+
+<style>
+:root {
+  --gold: #f5c342;
+  --dark: #0d0d0d;
+  --panel: #181818;
+  --panel-light: #222;
+  --border: #303030;
+  --text: #f2f2f2;
+  --muted: #a8a8a8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--dark);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  background: #000;
+  border-bottom: 3px solid var(--gold);
+  padding: 38px 18px 32px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: var(--gold);
+  font-size: clamp(1.7rem, 7vw, 2.6rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.tagline {
+  max-width: 650px;
+  margin: 10px auto 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.wrap {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 20px 16px 30px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 16px 0;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  margin: 8px 0;
+  color: var(--muted);
+}
+
+h2 {
+  margin: 30px 0 12px;
+  color: var(--gold);
+  font-size: 1.35rem;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.links a {
+  display: block;
+  padding: 12px 8px;
+  background: var(--panel-light);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.links a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.ep {
+  background: #151515;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 9px;
+  padding: 13px 14px;
+  margin: 10px 0;
+}
+
+.ep-title {
+  font-weight: 700;
+}
+
+.ep-meta {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 28px 16px;
+  border-top: 1px solid #222;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+a {
+  color: var(--gold);
+}
+
+@media (max-width: 520px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding-top: 30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Another Clash of Clans Podcast</h1>
+
+  <div class="tagline">
+    ACoCP — Clash of Clans news, discussion, guests and Clash Court.
+  </div>
+
+  <nav>
+    <a href="#episodes">Episodes</a>
+    <a href="#listen">Listen</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="card intro">
+    <h2>Welcome to ACoCP</h2>
+    <p>
+      Another Clash of Clans Podcast is an audio-first podcast covering
+      Clash of Clans news, community discussion, competitive Clash,
+      guests and the occasional appearance before Clash Court.
+    </p>
+  </section>
+
+  <section class="card" id="listen">
+    <h2>Listen & Follow</h2>
+
+    <div class="links">
+      <a href="https://www.youtube.com/@anotherclashpodcast" target="_blank" rel="noopener noreferrer">
+        YouTube
+      </a>
+
+      <a href="https://open.spotify.com/show/52LJMLGKdDGjB78HdF5iRa" target="_blank" rel="noopener noreferrer">
+        Spotify
+      </a>
+
+      <a href="https://podcasts.apple.com/podcast/id1896730360" target="_blank" rel="noopener noreferrer">
+        Apple Podcasts
+      </a>
+
+      <a href="https://www.tiktok.com/@click_acocp" target="_blank" rel="noopener noreferrer">
+        TikTok
+      </a>
+
+      <a href="https://discord.gg/UsTUm9ERK" target="_blank" rel="noopener noreferrer">
+        Podcast Discord
+      </a>
+
+      <a href="https://www.youtube.com/@anotherclashpodcast/videos" target="_blank" rel="noopener noreferrer">
+        YouTube Episodes
+      </a>
+    </div>
+  </section>
+
+  <section id="episodes">
+    <h2>Episode Catalogue</h2>
+
+    <div class="ep">
+      <div class="ep-title">16. A Fright to Remember</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">15. Base-ic Instinct</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">14. Rise of the Termynator</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">13. Missing from the Stands</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">12. Waiting on the Exterminators</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">11. An Electrifying Combination</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">10. Happy 14th Clashiversary</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">9. A Storm on the Horizon</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">8. Making Things Crystal Clear</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">7. A Global Affair</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">6. Congress Is Now in Session</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">5. Order in the Court</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">4. End of an Era</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">3. In the Meantime</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">2. Getting to Know You</div>
+    </div>
+
+    <div class="ep">
+      <div class="ep-title">1. No Fools This April</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 ACoCP — Another Clash of Clans Podcast
+</footer>
+
+</body>
+</html>
